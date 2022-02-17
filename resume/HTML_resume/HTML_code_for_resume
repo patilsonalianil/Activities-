@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonali</title>
+    <style>
+        .wholepage{
+            width:1300px;
+            margin-left:auto;
+            margin-right:auto;
+            border: 5px outset rgb(17, 12, 12);
+        }
+        .myDiv {
+          border: 5px outset rgb(173, 216, 230);
+          background-color: rgb(86, 62, 109);    
+          text-align: center;
+        }
+        .left {
+          
+          background-color: rgb(245, 241, 237);    
+          
+        }
+        .right{
+          
+          background-color: rgb(255, 255, 255);    
+          height: 100%;
+          width: 60%;
+          
+          z-index: 1;
+         
+        }
+        .wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1000px 1fr;
+
+ 
+}
+    </style>
+    
+</head>
+<body>
+    <div class="wholepage">
+    <div class="myDiv">
+        <h1 style="color:white"><u>SONALI PATIL</u></h1>
+        <p style="color:white">Software Engineer</p>
+    </div>
+<div class="wrapper">
+    <div class="left">
+        <h2>&nbsp PROFILE</h2>
+        <h4><center>A passionate and enthusiastic coder with excellent problem-solving skills and 
+           ability to perform well in a team. Willing to work with the leading minds of the IT
+           industry and contribute to the industry with the knowledge domain that has been
+           gained and want to gain more knowledge with learning spirit. </center></h4>
+           <hr> 
+   
+       <h2>&nbsp EXPERIENCE</h2>
+       <ul>
+       <li><p><b>Web Developer (Internship) | Learning Arena</b>
+           <br>  
+           2020– SEPT 2020
+           <br> 
+           Duration- 2 months
+           <br> 
+           Location: Work from home.
+           <br> 
+           Job Role- To build, design and maintain dynamic websites and software
+           application.</p> 
+           
+           </li>
+
+           <li><p><b> Campus Manager (Internship) | Perfect Skills</b>
+            <br>
+            JULY 2020 – SEPT 2020.
+            <br>
+            Duration: 3 months.
+            <br>
+            Location: Work from home.
+            <br>
+            Job Role- To present PowerPoint presentations, make Reports, talk with the
+            client, write articles and to market about the company on social media sites.</p>
+            </li>
+            </ul>
+            <hr>
+            
+            <h2>&nbsp PROJECTS</h2>
+            <ul>
+                <li>
+            <p>
+<b>TAX SUMMARY PROCESSING SYSTEM.</b>
+<br>
+A web portal to calculate tax summary and solve tax related queries of
+clients.
+</li>
+<br>
+<li>
+<b>CROP YIELD PREDICTOR.</b>
+<br>
+A web portal to predict crop yield at a particular weather condition
+and thereby predicting the crop yield production using machine
+learning algorithms.
+</li>
+<br>
+<li>
+<b>AUTONOMOUS VEHICLE SYSTEM</b>
+<br>
+ A vehicle, pedestrian and traffic sign detection and tracking model that
+will be built by using deep convolutional neural network. This network
+will be trained on available dataset to provide reliable decision support
+for vehicles.
+</li>
+<br>
+</p>
+</ul>
+<hr>
+<h2>&nbsp CERTIFICATIONS</h2>
+<P><ul>
+    <I>&nbsp COURSERA CERTIHCATIONS: 
+        <li>Python Basics</li>
+        <li>Introduction To Html5</li>
+        <li>Machine</li>
+    <li>Learning For All</li>
+   <li> TCS: Softskill</li>
+   <li> Cyber Security</li>
+
+</I></P>
+</ul>
+<hr>
+
+<h2>&nbsp HOBBIES</h2>
+<P> <ul><li>Dancing</li>
+    <li> Reading books</li>
+    <li> Travelling</li>
+
+</ul>
+</P>  
+       
+</div>
+      
+    <div class="right">
+    
+     <h3> <img src="email.png" alt="Girl" width="30" height="30"><i><sup> &nbsp patilsonali2242000@gmail.com</sup></i></h3>
+
+     <h3> <img src="phone.png" alt="Girl" width="40" height="40"><i><sup> 9763163325</sup></i></h3>
+
+     <h3> <img src="loc.png" alt="Girl"width="40" height="40"><i><sup> Pune, India</sup></i></h3>
+
+     <h3> <img src="linkedin.png" alt="Girl"  width="40" height="40"><i><sup> &nbsp www.linkedin.com/in/sonali-p85647b193/</sup></i></h3>
+        <hr>
+    <h2>&nbsp SKILLS</h2>
+    <ul>
+        <li>C++</li>
+        <li>HTML,CSS</li>
+        <li>Mysql</li>
+        <li>Python</li>
+        <li>Problem solving Skills</li>
+        <li>Leadership skills</li>
+        <li>Analytical Skills</li>
+        <li>Strong Communication Skills</li>
+    </ul>
+    <hr>
+    <h2>&nbsp EDUCATION</h2>
+    <ul>
+        <p>
+            <li>
+                <b>
+                    BE (Computer) | PCCOE,PUNE 
+                </b>
+                PASSING YEAR- 2022
+                <br>
+                CGPA- 8.64 pointer
+            </li>
+            <br>
+            <li>
+                <b>
+                    HSC | LOYOLA Jr College,PUNE 
+                </b>
+                PASSING YEAR– 2018 <br>
+                PRECENTAGE- 66.92%
+            </li>
+            <br>
+            <li>
+                <b>
+                    SSC | S.T JOSEPH’S GIRLS CONVENT HIGH SCHOOL,PUNE
+                </b>
+                PASSING YEAR– 2016 <br>
+                PRECENTAGE- 87.60%
+            </li>
+        </p>
+    </ul>
+
+    
+    </div>
+</div>
+</div>
+   
+</body>
+</html>
