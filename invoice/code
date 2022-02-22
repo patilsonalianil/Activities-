@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INVOICE</title>
+  <style>
+    .pgsize {
+
+      margin-left: 170px;
+      margin-right: 170px;
+      padding-left: 5px;
+      padding-bottom: 5px;
+      padding-right: 5px;
+      border: 3px outset rgb(17, 12, 12);
+      background-color: whitesmoke;
+    }
+
+    .container {
+
+      display: grid;
+      /* grid-gap: 10px; */
+      grid-template-columns: 160px 482px auto;
+      /* grid-auto-rows: minmax(100px, auto); */
+      /* grid-template-rows: 500px 200px; */
+    }
+
+    .container2 {
+
+      display: grid;
+      /* grid-gap: 10px; */
+      grid-template-columns: 60% 40% auto;
+      /* grid-auto-rows: minmax(100px, auto); */
+      /* grid-template-rows: 500px 200px; */
+    }
+
+    .container3 {
+
+      display: grid;
+      /* grid-gap: 10px; */
+      grid-template-columns: 50% 50% auto;
+      /* grid-auto-rows: minmax(100px, auto); */
+      /* grid-template-rows: 500px 200px; */
+    }
+
+    .item3 {
+      height: 300px;
+      width: 50;
+      background-color: whitesmoke;
+    }
+
+    .item {
+
+      height: 50%;
+      width: 50%;
+      background-color: whitesmoke;
+    }
+
+    .item2 {
+      height: 230px;
+      width: 50;
+      background-color: whitesmoke;
+    }
+
+    .head {
+      /* border: 5px solid blue; */
+      position: relative;
+      width: 40px;
+      height: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 0px;
+      background-color: red;
+      font: white;
+      top:15px;
+
+    }
+    .headd {
+      /* border: 5px solid blue; */
+      width: 70px;
+      height: 22px;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 0px;
+      background-color: red;
+      font: white;
+      
+
+    }
+   
+    .right{
+      
+      position:relative;
+      top:20%;
+      right:900px;
+      bottom:150px;
+      left:650px;
+      /* border:1px solid blue; */
+      background-color: whitesmoke;
+      height: 200px;
+      width:400px;
+    
+    }
+   
+    /* .right{
+      select { text-align-last: right; }
+      option { direction: rtl; }
+    } */
+  </style>
+</head>
+
+<!-- <script type="text/javascript"> 
+  // function fav() {
+  //   var mylist = document.getElementById("myList");
+  //   document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;
+  // }
+  const myInp=document.getElementById("myInp");
+const btnCopy=document.getElementById("btnCopy");
+
+btnCopy.onclick=function()
+{
+    myInp.select();
+    document.execCommand("Copy");
+};
+  
+</script> -->
+
+<body>
+  <div id="element">
+  <div class="pgsize">
+    <div class="container">
+      <div class="item">
+
+        <div class="head">
+          <p style="color:white">&nbspDUE </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <h1 style="padding: bottom 3px">INVOICE</h1>
+
+      </div>
+
+      <div class="item">
+        <img align="right" src="searce_logo.jpeg" alt="Girl" width="100" height="100">
+        <button id="cmd"> generate</button>
+
+      </div>
+
+
+    </div>
+    <p style="border: 1px solid rgb(44, 42, 42);width:500px">Thank you for youre purchase. Timely payment will be
+      appreicated.</p>
+
+    <div class="container">
+      <div class="item">
+
+        <h4>Invoice No.</h4>
+        <input type="text" placeholder="INV-694" />
+      </div>
+
+      <div class="item">
+     
+        
+        <!-- <form>
+          <br>
+          <b> Language</b>
+          <br>
+          <br>
+
+          <select id="myList" onchange="fav()" dir="rtl">
+            <option> ---Choose--- </option>
+            <option> English(US) </option>
+
+          </select>
+
+        </form> -->
+     
+      </div>
+
+      <div class="item">
+
+        <form>
+          <br>
+
+          <br>
+          <b> Language</b>
+      
+          <br>
+          <br>
+          <select id="myList" onchange="fav()" dir="rtl">
+            <option> ---Choose--- </option>
+            <option> English(US) </option>
+          </select>
+
+          <br><br>
+          <b> Currency</b>
+          <br>
+          <br>
+          
+
+          <select id="myList" onchange="fav()">
+            <option> ---Choose--- </option>
+            <option> British Pound (GBP) </option>
+            <option> U.S. Dollar (USD) </option>
+            <option> European Euro (EUR) </option>
+            <option> Canadian Dollar (CAD)</option>
+            <option> Indian rupee (INR)</option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <hr>
+
+    <!-- container2 ....this is the 2ns part of invoice -->
+    <div class="container2">
+      <div class="item2">
+        <b>From</b>
+        <p>Searce,Inc.<br>Hinjewadi phase-1 <br>Pune-411061, India</p>
+
+        <b>To</b>
+        <br>
+        <input style="height:100px;font-size:10pt;" type="text" placeholder=" " />
+
+      </div>
+      <div class="item2">
+        <b>Date</b>
+        <br>
+        <input type="date" id="Test_DatetimeLocal">
+        <br>
+        <br>
+        <b>Invoice Due</b>
+        <br>
+        <select style="text-align: right;" id="myList" onchange="fav()">
+          <option> ---Choose days--- </option>
+          <option> After 5 days </option>
+          <option> After 10 days </option>
+          <option> After 15 days </option>
+          <option> After 20 days </option>
+          <option> After 30 days </option>
+        </select>
+        <br>
+        </BR>
+        <b>Purchase Order Number</b>
+        <br>
+        <input type="text" placeholder="PO-123 " />
+
+      </div>
+    </div>
+
+    <!-- <div class="containter3"> -->
+      <!-- <div class="item3"> -->
+        <hr>
+        <b>Name</b>
+        <br>
+      
+        <input style="height:100px;width:600px;font-size:10pt;" id="myInp" type="text">
+        <br>
+        <button id="btnCopy">Copy</button>
+      <!-- </div> -->
+
+
+      <script type="text/javascript">
+        const myInp = document.getElementById("myInp");
+        const btnCopy = document.getElementById("btnCopy");
+
+        btnCopy.onclick = function () {
+          myInp.select();
+          document.execCommand("Copy");
+        };
+      </script>
+
+
+<!-- <div class="right">   -->
+  <!-- <div class="top">
+<form>
+  1st Number : <input type="text" id="firstNumber" /><br>
+  2nd Number: <input type="text" id="secondNumber" /><br>
+  <input type="button" onClick="multiplyBy()" Value="Multiply" />
+</form>
+<p>The Result is : <br>
+  <span id="result"></span>
+  Sub Total: <br>
+  <span id="result"></span>
+</p>
+<p>Sub Total: <br>
+  <span id="result"></span>
+</p>
+<script>
+function multiplyBy()
+{
+  num1 = document.getElementById("firstNumber").value;
+  num2 = document.getElementById("secondNumber").value;
+  document.getElementById("result").innerHTML = num1 * num2;
+}
+</script> 
+</div> -->
+
+<div class="right">
+  <form>
+    <b>Quantity </b><br><hr> <input type="text" id="firstNumber" /><br><br>
+    <b>Rate</b> <br><hr> <input type="text" id="secondNumber" />
+    <br>
+    <br>
+    <b>Value added tax(%)</b> <br> <hr> <input type="text" id="thirdNumber" /><br>
+    <input type="button" onClick="multiplyBy()" Value="Total" />
+  </form>
+  <div class="headd">
+  
+  <p style="color:white"><b>Total Due</b></p>
+    <span id="result"></span>
+    <br>
+   
+  </div>
+  
+</div>
+
+  <script>
+  function multiplyBy()
+  {
+    num1 = document.getElementById("firstNumber").value;
+    num2 = document.getElementById("secondNumber").value;
+    num3 = document.getElementById("thirdNumber").value;
+    document.getElementById("result").innerHTML = (((num1 * num2)*num3))/100+(num1*num2);
+  }
+  </script> 
+  </div>
+
+
+</div>
+</div>
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+<script>
+    $("#cmd").click(function(){
+    var element=document.getElementById("element")
+    html2pdf(element)
+});
+</script>
+
+</html>
