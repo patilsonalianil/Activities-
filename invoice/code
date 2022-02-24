@@ -201,13 +201,13 @@ btnCopy.onclick=function()
           <br>
           
 
-          <select id="myList" onchange="fav()">
-            <option> ---Choose--- </option>
+          <select id="mySelect" onchange="currency()">
+            <option> Indian rupee (INR)</option>
             <option> British Pound (GBP) </option>
             <option> U.S. Dollar (USD) </option>
             <option> European Euro (EUR) </option>
             <option> Canadian Dollar (CAD)</option>
-            <option> Indian rupee (INR)</option>
+           
           </select>
         </form>
       </div>
@@ -306,6 +306,7 @@ function multiplyBy()
     <br>
     <b>Value added tax(%)</b> <br> <hr> <input type="text" id="thirdNumber" /><br>
     <input type="button" onClick="multiplyBy()" Value="Total" />
+    <input type="reset" value="Reset">
   </form>
   <div class="headd">
   
@@ -324,7 +325,23 @@ function multiplyBy()
     num2 = document.getElementById("secondNumber").value;
     num3 = document.getElementById("thirdNumber").value;
     document.getElementById("result").innerHTML = (((num1 * num2)*num3))/100+(num1*num2);
+    
   }
+
+function currency()
+{
+  num1 = document.getElementById("firstNumber").value;
+    num2 = document.getElementById("secondNumber").value;
+    num3 = document.getElementById("thirdNumber").value;
+    var x = document.getElementById("mySelect").value;
+    document.getElementById("result").innerHTML = x+ (((num1 * num2)*num3))/100+(num1*num2)*75;
+  var x = document.getElementById("mySelect").value;
+
+  // var y= document.getElementById("result").value
+  // document.getElementById("result").innerHTML = "You selected: " + 28;
+}
+
+
   </script> 
   </div>
 
